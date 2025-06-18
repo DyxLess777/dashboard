@@ -430,5 +430,7 @@ def stationarity_tests(selected_country):
 
     return html.Div([html.P(result) for result in results])
 
+server = app.server
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run_server(debug=True)
